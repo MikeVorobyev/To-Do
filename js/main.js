@@ -176,7 +176,9 @@ function doneTask(event) {
 
 // Функция сохранения массива tasks в localStorage
 function saveToLocalStorage() {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    tasks.length === 0 
+            ? localStorage.removeItem('tasks') 
+            : localStorage.setItem('tasks', JSON.stringify(tasks))
 };
 // ---------------------------- Функции END -----------------------------
 
@@ -190,7 +192,3 @@ tasksList.addEventListener('click', deleteTask);
 
 // Отмечаем, что задача выполнена
 tasksList.addEventListener('click', doneTask);
-
-
-
-// console.log(emptyListDIV)
