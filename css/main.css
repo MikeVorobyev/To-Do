@@ -73,22 +73,26 @@ body {
   font-size: 32px;
 }
 .btn-action {
-    background-color: #e0e5ea;
-    padding: 8px 10px;
-    cursor: pointer;
-    border: 0;
-    border-radius: 4px;
-    transition: opacity 0.2s ease-in;
-    opacity: 0.5;
+  background-color: #e0e5ea;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in;
+  opacity: 0.5;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-action:hover {
-    background-color: #e0e5ea;
-    opacity: 1;
+  background-color: #e0e5ea;
+  opacity: 1;
+}
+
+.btn-action:focus {
+  outline: none;
 }
 
 .btn-action img {
